@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dolphin_grey_box_drawables"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.ui.fragments.ModeFragment"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="vertical"
+        android:id="@+id/guideline1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.30"
+        android:orientation="vertical"
+        android:id="@+id/guidelinev1"/>
+
+    <ImageView
+        android:id="@+id/imgCross"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:src="@drawable/img_cross"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="horizontal"
+        android:id="@+id/guideline"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.33"
+        android:orientation="horizontal"
+        android:id="@+id/guideline2"/>
+
+    <TextView
+        android:id="@+id/txtMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_20sdp"
+        android:text="MODES"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial_bold"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/guideline"/>
+
+    <include
+        android:id="@+id/modeContinuesSedation"
+        layout="@layout/mode_button_layout"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintEnd_toEndOf="@id/guidelinev1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_22sdp"/>
+
+    <include
+        android:id="@+id/modeOnDemand"
+        layout="@layout/mode_button_layout"
+        app:layout_constraintStart_toStartOf="@id/modeContinuesSedation"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/modeContinuesSedation"
+        app:layout_constraintEnd_toEndOf="@id/guidelinev1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_22sdp"/>
+
+    <include
+        android:id="@+id/modeIntelliAuto"
+        layout="@layout/mode_button_layout"
+        app:layout_constraintStart_toStartOf="@id/modeOnDemand"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/modeOnDemand"
+        app:layout_constraintEnd_toEndOf="@id/guidelinev1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_22sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,154 @@
+[
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/tile_design_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/tile_design_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/recovery_buttons_include.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/recovery_buttons_include.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_control.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_control.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/menu_options_item_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/menu_options_item_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_menu.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_menu.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_alarm_limits.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_alarm_limits.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_mode.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_mode.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_service.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_service.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_intelli.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_intelli.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/custom_alert.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/custom_alert.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_chart.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_chart.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/common_tile_design.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/common_tile_design.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/content_female_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/content_female_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/chart_fragment.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/chart_fragment.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/control_paras_item_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/control_paras_item_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/recovery_item.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/recovery_item.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/activity_stand_by.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/activity_stand_by.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_recent_patient.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_recent_patient.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/activity_main.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/activity_main.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/error_logs_item_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/error_logs_item_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_stand_by.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_stand_by.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_error_logs.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_error_logs.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/auto_n2o_items.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/auto_n2o_items.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/activity_splash.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/activity_splash.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/control_item_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/control_item_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_advanced_calibration.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_advanced_calibration.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_advanced.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_advanced.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_calibration.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_calibration.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_basic.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_basic.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/observed_tile_design_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/observed_tile_design_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_common.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_common.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/content_male_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/content_male_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/button_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/button_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/fragment_settings.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/fragment_settings.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/two_tile_design_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/two_tile_design_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/common_menu_sub_fragment.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/common_menu_sub_fragment.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/recent_patient_item_layout.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/recent_patient_item_layout.xml"
+    },
+    {
+        "merged": "com.agvahealthcare.ventilator_ext.app-mergeDebugResources-76:/layout-sw720dp-v13/layout_design_alert.xml",
+        "source": "com.agvahealthcare.ventilator_ext.app-main-79:/layout-sw720dp/layout_design_alert.xml"
+    }
+]

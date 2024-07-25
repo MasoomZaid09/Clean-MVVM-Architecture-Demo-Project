@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSettingsV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineSettingsV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Model"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewModelData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewModel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSoftwareVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Software Version"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewModel" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSoftwareVersionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewSoftwareVersion" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHardwareVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Hardware Version"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewSoftwareVersion" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewHardwareVersionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewHardwareVersion" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLogId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Log Device Id"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewHardwareVersion" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLogIdData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewLogId" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewBatteryRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Battery Level"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewLogId" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewBatteryRemainingData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewBatteryRemaining" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewServiceHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Hours since last service"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewBatteryRemaining" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewServiceHoursData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewServiceHours" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewConnectionData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="Connection Status"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_medium"
+            app:layout_constraintStart_toEndOf="@id/guidelineSettingsV1"
+            app:layout_constraintTop_toBottomOf="@id/textViewServiceHours" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewConnectionDataData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+                  android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_next_lt_pro_regular"
+            app:layout_constraintStart_toEndOf="@+id/guidelineSettingsV2"
+            app:layout_constraintTop_toTopOf="@+id/textViewConnectionData" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

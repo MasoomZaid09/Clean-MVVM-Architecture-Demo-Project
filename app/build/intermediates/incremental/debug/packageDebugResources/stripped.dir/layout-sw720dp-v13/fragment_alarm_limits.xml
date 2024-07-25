@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h4_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/h5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v1_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v2_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.15" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v3_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v4_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v5_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/v6_guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.80" />
+
+        <TextView
+            android:id="@+id/fiO2_tV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_regular"
+            android:text="FiO2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/h3_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v2_guideline"
+            app:layout_constraintStart_toEndOf="@id/v1_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h2_guideline" />
+
+        <TextView
+            android:id="@+id/paw_tV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_regular"
+            android:text="Paw"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/h4_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v2_guideline"
+            app:layout_constraintStart_toEndOf="@id/v1_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h3_guideline" />
+
+
+        <TextView
+            android:id="@+id/flow_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arial_regular"
+            android:text="Flow"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/h5_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v2_guideline"
+            app:layout_constraintStart_toEndOf="@id/v1_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h4_guideline" />
+
+        <TextView
+            android:id="@+id/low_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lower"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toTopOf="@id/h2_guideline"
+            app:layout_constraintEnd_toEndOf="@id/v4_guideline"
+            app:layout_constraintStart_toEndOf="@id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h1_guideline" />
+
+        <include
+            android:id="@+id/fio2_low_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/h3_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v4_guideline"
+            app:layout_constraintStart_toStartOf="@id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h2_guideline" />
+
+
+        <include
+            android:id="@+id/paw_low_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/h4_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v4_guideline"
+            app:layout_constraintStart_toStartOf="@id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h3_guideline" />
+
+        <include
+            android:id="@+id/flow_low_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/h5_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v4_guideline"
+            app:layout_constraintStart_toStartOf="@id/v3_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h4_guideline" />
+
+        <TextView
+            android:id="@+id/high_tv_alarm_limits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upper"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_7sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/h2_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v6_guideline"
+            app:layout_constraintStart_toEndOf="@id/v5_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h1_guideline" />
+
+        <include
+            android:id="@+id/fio2_high_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/h3_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v6_guideline"
+            app:layout_constraintStart_toStartOf="@id/v5_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h2_guideline" />
+
+        <include
+            android:id="@+id/paw_high_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toTopOf="@id/h4_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v6_guideline"
+            app:layout_constraintStart_toStartOf="@id/v5_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h3_guideline" />
+
+
+        <include
+            android:id="@+id/flow_high_limit"
+            layout="@layout/alarm_limit_items_include"
+            android:layout_width="@dimen/_46sdp"
+            android:layout_height="@dimen/_14sdp"
+            app:layout_constraintBottom_toBottomOf="@id/h5_guideline"
+            app:layout_constraintBottom_toTopOf="@id/h5_guideline"
+            app:layout_constraintEnd_toStartOf="@id/v6_guideline"
+            app:layout_constraintStart_toStartOf="@id/v5_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h4_guideline" />
+
+        <TextView
+            android:id="@+id/tv_perc_fio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="%"
+            android:textColor="@color/grey_label"
+            android:textSize="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@id/h3_guideline"
+            app:layout_constraintStart_toEndOf="@id/v6_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h2_guideline" />
+
+        <TextView
+            android:id="@+id/tv_cmh2O_paw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="cmH2O"
+            android:textColor="@color/grey_label"
+            android:textSize="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@id/h4_guideline"
+            app:layout_constraintStart_toEndOf="@id/v6_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h3_guideline" />
+
+        <TextView
+            android:id="@+id/tv_l_min_flow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="L/min"
+            android:textColor="@color/grey_label"
+            android:textSize="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@id/h5_guideline"
+            app:layout_constraintStart_toEndOf="@id/v6_guideline"
+            app:layout_constraintTop_toBottomOf="@id/h4_guideline" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

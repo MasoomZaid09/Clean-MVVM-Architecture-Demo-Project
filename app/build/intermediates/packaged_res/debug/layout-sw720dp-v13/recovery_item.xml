@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_92sdp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@color/background"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Discontinue_Sedation"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/recovery_TextView"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_8sdp"
+        android:fontFamily="@font/arial_regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/h1_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v1_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/v2_guideLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.51" />
+
+
+    <include
+        android:id="@+id/continue_recovery_btn"
+        layout="@layout/recovery_buttons_include"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/v2_guideLine"
+        app:layout_constraintTop_toBottomOf="@id/h1_guideLine"
+        app:layout_constraintStart_toEndOf="@id/v1_guideLine"/>
+
+    <include
+        android:id="@+id/cancel_recovery_btn"
+        layout="@layout/recovery_buttons_include"
+        android:layout_width="@dimen/_36sdp"
+        android:layout_height="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h1_guideLine"
+        app:layout_constraintStart_toStartOf="@id/v2_guideLine"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

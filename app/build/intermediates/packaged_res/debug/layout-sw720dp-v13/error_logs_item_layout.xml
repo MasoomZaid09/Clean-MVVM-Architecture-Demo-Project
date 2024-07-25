@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_20sdp"
+    android:visibility="visible"
+    android:background="@color/light_grey_background">
+
+
+        <View
+            android:id="@+id/v1ErrorLog"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guidelineErrorLogV1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineErrorLogV1"/>
+
+        <View
+            android:id="@+id/v2ErrorLog"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guidelineErrorLogV2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineErrorLogV2"/>
+
+        <View
+            android:id="@+id/v3ErrorLog"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="@id/guidelineErrorLogV3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineErrorLogV3"/>
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineErrorLogV1"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.10"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineErrorLogV2"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.60"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guidelineErrorLogV3"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85"/>
+
+
+        <TextView
+            android:id="@+id/txtErrorLogSNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S.No"
+            android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial_regular"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineErrorLogV1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/txtErrorLogErrors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error"
+            android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial_regular"
+            app:layout_constraintStart_toEndOf="@id/guidelineErrorLogV1"
+            app:layout_constraintEnd_toStartOf="@id/guidelineErrorLogV2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+        <TextView
+            android:id="@+id/txtErrorLogTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial_regular"
+            app:layout_constraintStart_toEndOf="@id/guidelineErrorLogV2"
+            app:layout_constraintEnd_toStartOf="@id/guidelineErrorLogV3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:id="@+id/txtErrorLogDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial_regular"
+            app:layout_constraintStart_toEndOf="@id/guidelineErrorLogV3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

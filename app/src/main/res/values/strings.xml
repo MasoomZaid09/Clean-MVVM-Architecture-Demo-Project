@@ -1,0 +1,207 @@
+<resources>
+    <string name="app_name">Sedation_System_Ext</string>
+    <string name="agva">AgVa</string>
+    <string name="menu">Menu</string>
+    <string name="continuos_sedation">Continuous</string>
+    <string name="auto_n2o">Auto N₂O</string>
+    <string name="intelli_auto">Intelli Auto</string>
+    <string name="o2_flush">O₂ Flush</string>
+    <string name="stop_o2_flush">Stop O₂ Flush</string>
+    <string name="therapy_end">Therapy End</string>
+    <string name="stop_therapy_end">Stop</string>
+    <string name="control">Controls</string>
+    <string name="on_demand">On Demand</string>
+    <string name="recovery">Recovery</string>
+    <string name="n20">N₂O</string>
+    <string name="o2">O₂</string>
+    <string name="standby">STANDBY</string>
+
+    // value for tiles
+    <string name="unit_total_flow">L/min</string>
+    <string name="default_total_flow">15</string>
+    <string name="min_total_flow">0</string>
+    <string name="max_total_flow">60</string>
+    <string name="step_total_flow">1</string>
+
+    <string name="unit_rise_rate">% / min</string>
+    <string name="default_rise_rate">20</string>
+    <string name="min_rise_rate">5</string>
+    <string name="max_rise_rate">50</string>
+    <string name="step_rise_rate">5</string>
+
+    <string name="unit_max_pr">bpm</string>
+    <string name="default_max_pr">80</string>
+    <string name="min_max_pr">60</string>
+    <string name="max_max_pr">120</string>
+    <string name="step_max_pr">1</string>
+
+    <string name="unit_delta_fio2">%</string>
+    <string name="default_delta_fio2">10</string>
+    <string name="min_delta_fio2">5</string>
+    <string name="max_delta_fio2">25</string>
+    <string name="step_delta_fio2">1</string>
+
+    <string name="unit_target_spo2">%</string>
+    <string name="default_target_spo2">92</string>
+    <string name="min_target_spo2">90</string>
+    <string name="max_target_spo2">98</string>
+    <string name="step_target_spo2">1</string>
+
+    <string name="unit_fall_rate">% / min</string>
+    <string name="default_fall_rate">20</string>
+    <string name="min_fall_rate">5</string>
+    <string name="max_fall_rate">50</string>
+    <string name="step_fall_rate">5</string>
+
+    <string name="unit_plimit">cmH₂o</string>
+    <string name="default_plimit">5</string>
+    <string name="min_plimit">0</string>
+    <string name="max_plimit">40</string>
+    <string name="step_plimit">1</string>
+
+    <string name="default_adult_body_weight">60</string>
+    <string name="default_adult_body_height">160</string>
+    <string name="default_adult_age">16</string>
+
+    <string name="default_ped_body_weight">40</string>
+    <string name="default_ped_body_height">110</string>
+    <string name="default_ped_age">8</string>
+
+    <string name="default_neo_body_weight">3</string>
+    <string name="default_neo_body_height">50</string>
+    <string name="default_neo_age">3</string>
+
+    <string name="hint_male" translatable="false">Male</string>
+    <string name="hint_female" translatable="false">Female</string>
+
+    <string name="unit_target_pressure">cmH₂o</string>
+    <string name="default_target_pressure">0.5</string>
+    <string name="min_target_pressure">0.1</string>
+    <string name="max_target_pressure">5.0</string>
+    <string name="step_target_pressure">0.1</string>
+
+    <string name="unit_n2o">%</string>
+    <string name="default_n2o">30</string>
+    <string name="min_n2o">0</string>
+    <string name="max_n2o">70</string>
+    <string name="step_n2o">1</string>
+
+
+    <string name="flow_tile_unit">L/min</string>
+    <string name="paw_tile_unit">cmH₂O</string>
+    <string name="fio2_tile_unit">%</string>
+
+    <string name="Discontinue_Sedation">Discontinue the sedation and \n start the recovery phase?</string>
+
+    <string name="basic">Basic</string>
+    <string name="advanced">Advanced</string>
+    <string name="intelli">Intelli</string>
+    <string name="recentPatient">Events</string>
+    <string name="errorLogs">Logs</string>
+    <string name="alarmLimits">Alarms</string>
+    <string name="calibration">Calibration</string>
+    <string name="info">Info</string>
+    <string name="serviceWindow">Service</string>
+    <string name="advancedCalibration">Advance</string>
+    <string name="date_and_time">Date &amp; Time</string>
+
+    <string name="n2o_alert">N₂O Failure</string>
+
+    <string name="o2_alert">O₂ Failure</string>
+
+    <string name="n2o_info">Check N₂O Cylinder</string>
+    <string name="o2_info">Check O₂ Cylinder</string>
+    <string name="o2_info1">Sedation is stopped</string>
+    <string name="o2_info2">Connect O₂ Cylinder immediately.</string>
+
+    <string name="btn_hold">Hold Sedation</string>
+    <string name="btn_continue_n2o">Continue with O₂</string>
+    <string name="btn_continue_o2">Continue</string>
+    <string name="o2_calibration">O₂ Calibration</string>
+    <string name="flow_calibration">Flow Calibration</string>
+
+    <string name="o2_calibration_progress">% Calibration ...    Please wait</string>
+    <string name="o2_calibration_completed">Calibration Successful</string>
+
+    <string name="o2_calib1">1. Open O₂ Sensor from device.</string>
+    <string name="o2_calib2">2. Place Oxygen Sensor in Air.</string>
+    <string name="o2_calib3">3. Press Start </string>
+
+    <string name="flow_calib1">1. Make sure the ventilator is connected to mains supply.</string>
+    <string name="flow_calib2">2. Connect external flow calibrator to port.</string>
+    <string name="flow_calib3">3. Press Start </string>
+
+    <string name="press_switch_onn_manually" translatable="false">Press the power button at back of ventilator to switch on</string>
+
+    <string name="hint_sedation">Sedation</string>
+    <string name="hint_system">System</string>
+    <string name="hint_copyright">All Rights Reserved. Copyright © 2022</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="start_sedation">Start Sedation</string>
+
+    <string name="hint_calibration_completed" >Calibration completed</string>
+    <string name="hint_calibration_failure" >Calibration failure</string>
+    <string name="hint_calibration_error" >Calibration Error</string>
+    <string name="hint_handshake_completed">Handshake completed</string>
+
+    <string name="start">START SEDATION WITH NEW PATIENT</string>
+    <string name="system">SYSTEM</string>
+    <string name="adult">ADULT</string>
+    <string name="pediatric">PEDIATRIC</string>
+    <string name="mode">MODE</string>
+    <string name="start_existing">START SEDATION WITH EXISTING PATIENT</string>
+    <string name="error_in_connection_restart_app">Unable to start the sedation system, please restart manually.</string>
+
+
+    <string name="flow_l_min">Flow (l/min)</string>
+    <string name="pressure_l_min">Pressure (l/min)</string>
+
+<!--    alarms message strings-->
+    <string name="high_airway_pressure_msg">High Airway Pressure</string>
+    <string name="o2_low_msg">Low O2</string>
+    <string name="o2_high_msg">High O2</string>
+    <string name="low_flow_msg">Low Total Flow</string>
+    <string name="high_flow_msg">High Total Flow</string>
+    <string name="low_n2o_inlet_pressure_msg">Low N2O Inlet Pressure</string>
+    <string name="low_o2_inlet_pressure_msg">Low O2 Inlet Pressure</string>
+    <string name="o2_cylinder_low_msg">O2 Cylinder Low</string>
+    <string name="o2_cylinder_empty_msg">O2 Cylinder Empty</string>
+    <string name="n2o_cylinder_low_msg">NO2 Cylinder Low</string>
+    <string name="n2o_cylinder_empty_msg">NO2 Cylinder Empty</string>
+    <string name="battery_low_msg">BATTERY LOW</string>
+    <string name="battery_critical_low_msg">BATTERY CRITICALLY LOW</string>
+    <string name="on_battery_msg">ON BATTERY</string>
+    <string name="low_spo2_msg">LOW SPO2</string>
+    <string name="high_pr_msg">HIGH PR</string>
+    <string name="low_pr_msg">LOW PR</string>
+    <string name="o2_cell_change_msg">O2 Cell Change</string>
+
+
+    <string name="standby_activated">Standby mode activated</string>
+    <string name="cmd_vent_mute_alarm_permanent">CM+MUTE1</string>
+    <string name="cmd_vent_mute_alarm_temporary">CM+MUTE2</string>
+    <string name="cmd_vent_unmute_alarm">CM+MUTE0</string>
+
+    <string name="flow_default_min">0</string>
+    <string name="flow_default_max">80</string>
+    <string name="flow_max">80</string>
+    <string name="flow_min">0</string>
+    <string name="flow_step">1</string>
+
+    <string name="paw_default_min">0</string>
+    <string name="paw_default_max">20</string>
+    <string name="paw_min">0</string>
+    <string name="paw_step">1</string>
+
+    <string name="fio2_default_min">21</string>
+    <string name="fio2_default_max">100</string>
+    <string name="fio2_max">100</string>
+    <string name="fio2_min">21</string>
+    <string name="fio2_step">1</string>
+
+    <string name="low_value_msg_suffix">is low</string>
+    <string name="high_value_msg_suffix">is high</string>
+    <string name="normal_value_msg_suffix">is normal limit</string>
+
+</resources>

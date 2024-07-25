@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineCalibrationH1"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineCalibrationH2"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineCalibrationH3"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelineCalibrationV1"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <TextView
+        android:id="@+id/txtCalibrationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/flow_calibration"
+        android:textSize="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/arial_bold"
+        app:layout_constraintStart_toEndOf="@id/guidelineCalibrationV1"
+        app:layout_constraintTop_toBottomOf="@id/guidelineCalibrationH1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/InfoRecycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guidelineCalibrationH2" />
+
+
+    <include
+        android:id="@+id/btnCalibrationStart"
+        layout="@layout/recovery_buttons_include"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/InfoRecycler"
+        app:layout_constraintTop_toBottomOf="@id/InfoRecycler"
+        app:layout_constraintStart_toStartOf="@id/InfoRecycler"/>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+        android:id="@+id/guidelineCalibrationV2"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"
+        android:id="@+id/guidelineCalibrationV3"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calibrationProgressLayout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/guidelineCalibrationV2"
+        app:layout_constraintEnd_toStartOf="@id/guidelineCalibrationV3"
+        app:layout_constraintBottom_toTopOf="@id/guidelineCalibrationH3">
+
+        <TextView
+            android:id="@+id/txtCalibrationProgressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o2_calibration_progress"
+            android:textSize="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/arial_bold"
+            app:layout_constraintStart_toStartOf="@id/o2CalibrationProgress"
+            app:layout_constraintEnd_toEndOf="@id/o2CalibrationProgress"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/o2CalibrationProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_14sdp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/linear_progress_bar"
+            app:layout_constraintEnd_toStartOf="@id/btnCancelCalibration"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <include
+            android:id="@+id/btnCancelCalibration"
+            layout="@layout/recovery_buttons_include"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/o2CalibrationProgress"
+            app:layout_constraintBottom_toBottomOf="@id/o2CalibrationProgress"
+            app:layout_constraintStart_toEndOf="@id/o2CalibrationProgress"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

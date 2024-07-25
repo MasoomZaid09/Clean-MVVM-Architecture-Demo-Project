@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayoutPanel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="23dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Total Flow"
+            android:textColor="@color/black"
+            android:alpha="0.6"
+            android:textAllCaps="false"
+            android:theme="@style/subheading_text_style_unit"
+            android:textSize="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <antonkozyriatskyi.circularprogressindicator.CircularProgressIndicator
+        android:id="@+id/param_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateOnly="false"
+        android:maxWidth="@dimen/_4sdp"
+        app:progressColor="@color/racing_green"
+        android:scaleX="1"
+        app:direction="clockwise"
+        app:progressBackgroundColor="#454545"
+        android:progress="0"
+        app:enableProgressAnimation="false"
+        app:textColor="@android:color/transparent"
+        android:progressDrawable="@drawable/progresscircle" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textAppearance="@style/subheading_text_style_graph"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_6sdp"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:text="%"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:alpha="0.6"
+        android:theme="@style/subheading_text_style_unit"
+        android:textSize="@dimen/_4sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewValue" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

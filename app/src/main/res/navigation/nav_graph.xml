@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/standByFragment">
+
+    <fragment
+        android:id="@+id/standByFragment"
+        android:name="com.agvahealthcare.ventilator_ext.presentation.ui.fragments.StandByFragment"
+        android:label="fragment_stand_by"
+        tools:layout="@layout/fragment_stand_by" >
+
+        <action
+            android:id="@+id/action_standByFragment_to_graphFragment"
+            app:destination="@id/graphFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/graphFragment"
+        android:name="com.agvahealthcare.ventilator_ext.presentation.ui.fragments.CommonFragment"
+        android:label="fragment_graph"
+        tools:layout="@layout/fragment_common" />
+</navigation>
